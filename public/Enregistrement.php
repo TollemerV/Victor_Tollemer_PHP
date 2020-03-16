@@ -7,16 +7,23 @@ try { // LANCER UNE EXCEPTION
   die();
 }
 
+function prixVoiture (int $an,int $km)
+{
+    $prix=($km-$an);
+
+    return $prix;
+}
 
 if(!empty($_POST))
 {
     $nom = $_POST['nom'];
     $annee_sortie = $_POST['annee_sortie'];
     $nb_km = $_POST['nb_km'];
+    $prix = prixVoiture($annee_sortie,$nb_km); 
 
-    $req = "INSERT INTO voiture ( `nom`, `annee_sortie`, `nb_km`, `prix`, `visible`) VALUES ( '$nom', '$annee_sortie' , '$nb_km',5000,1);";
+    $req = "INSERT INTO voiture ( `nom`, `annee_sortie`, `nb_km`, `prix`, `visible`) VALUES ( '$nom', '$annee_sortie' , '$nb_km','$prix',1);";
     $pdo->query($req);
- 
+    
 }
 ?>
 <!DOCTYPE html>
@@ -41,7 +48,7 @@ if(!empty($_POST))
     <input type="text"  name="annee_sortie" >
     </label>
     <hr>
-    <label > Nombres Kilometres
+    <label > Nombre Kilometres :
     <input type="text"  name="nb_km" >
     </label>
     <hr>

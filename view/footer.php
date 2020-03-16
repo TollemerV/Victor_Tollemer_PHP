@@ -15,14 +15,13 @@
       <div class="col-6 col-md">
         <h5>Voitures</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="../public/Modif.php">Modification</a></li>
           <li><a class="text-muted" href="../public/Enregistrement.php">Enregistrement</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5>Aide</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="../public/Administration.php">Administration</a></li>
+          <li><a class="text-muted" href="../public/Admin.php">Administration</a></li>
 
         </ul>
       </div>

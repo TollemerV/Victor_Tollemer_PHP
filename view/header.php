@@ -16,9 +16,7 @@
           <a class="nav-link <?php echo ($class = $_SERVER['REQUEST_URI']== "/Controle_PHP/public/Admin.php?active"?"active":"" ); ?> " href="../public/Admin.php?active" tabindex="-1" aria-disabled="true">Administration</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link <?php echo ($class = $_SERVER['REQUEST_URI']== "/Controle_PHP/public/Modif.php?active"?"active":"" ); ?> " href="../public/Modif.php?active" tabindex="-1" aria-disabled="true">Modification</a>
-        </li>
+      
       </ul>
    
     </div>
